@@ -1,0 +1,17 @@
+{
+  "log": { "loglevel": "warning" },
+  "inbounds": [{
+    "port": 8080,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{ "id": "cfe2cd20-ea9f-11f0-b730-205c6d5f5d78" }],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": { "path": "/qassim-ipe" }
+    }
+  }],
+  "outbounds": [{ "protocol": "freedom" }]
+}
+
